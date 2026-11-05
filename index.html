@@ -14,10 +14,16 @@
 <body>
   <div class="site-nav"><div class="wrap"><nav aria-label="Main navigation">
     <a class="logo" href="#top"><img src="assets/images/logo2.avif" alt="" width="40" height="40"> <span>Delta-Alpha</span></a>
-    <ul>
-      <li><a href="#services">Services</a></li><li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#services">Services</a></li><li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-social" aria-label="Social media">
+        <a href="https://www.instagram.com/_delta_alpha/">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100025337140082">Facebook</a>
+      </div>
+    </div>
   </nav></div></div>
   <header class="hero" id="top">
     <div class="wrap hero-content"><div>
@@ -70,7 +76,7 @@
     </div></section>
   </main>
 
-  <footer><div class="wrap"><span>© Delta-Alpha</span><span><a href="https://www.instagram.com/_delta_alpha/">Instagram</a> &nbsp; <a href="https://www.facebook.com/profile.php?id=100025337140082">Facebook</a></span></div></footer>
+  <footer><div class="wrap"><span>© Delta-Alpha</span></div></footer>
   <script>
     const siteNav = document.querySelector('.site-nav');
     const updateNav = () => siteNav.classList.toggle('is-scrolled', window.scrollY > 40);
