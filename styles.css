@@ -23,8 +23,8 @@ a { color: inherit; text-underline-offset: 5px; text-decoration-thickness: 1px; 
 .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 20; background: transparent; transition: background-color .25s ease, box-shadow .25s ease; }
 .site-nav.is-scrolled { background: color-mix(in srgb, var(--bg) 94%, transparent); box-shadow: 0 4px 18px rgb(0 0 0 / 8%); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 nav { height: 96px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.logo { display: inline-flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 400; letter-spacing: .02em; text-decoration: none; white-space: nowrap; }
-.logo img { display: block; width: 40px; height: 40px; object-fit: contain; }
+.logo { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; font-size: 16px; font-weight: 400; letter-spacing: .02em; line-height: 1.1; text-decoration: none; white-space: nowrap; }
+.logo img { display: block; width: 44px; height: 44px; object-fit: contain; }
 nav ul { display: flex; gap: 36px; margin: 0; padding: 0; list-style: none; font-size: 16px; }
 nav ul a { color: var(--muted); text-decoration: none; }
 nav ul a:hover { color: var(--ink); }
@@ -32,7 +32,6 @@ nav ul a:hover { color: var(--ink); }
 .site-nav:not(.is-scrolled) nav ul a:hover { color: var(--accent-hover); }
 .hero { --ink: #1f2326; --muted: #555b60; color: var(--ink); min-height: min(80vh, 720px); padding-top: 96px; display: flex; flex-direction: column; overflow: hidden; background: #bdbdb9 url("assets/images/Image1.jpg") 82% center/cover no-repeat; }
 .hero-content { flex: 1; display: grid; grid-template-columns: 7fr 5fr; align-items: end; padding-bottom: 72px; }
-.hero-logo { display: block; width: clamp(140px, 22vw, 260px); height: auto; margin: 0 0 28px; object-fit: contain; }
 h1 { margin: 0; font-size: clamp(36px, 5.8vw, 88px); font-weight: 300; line-height: .98; letter-spacing: -.035em; }
 .hero-tagline { white-space: nowrap; font-size: .72em; }
 .intro { max-width: 34ch; margin: 32px 0 0; color: var(--muted); }
