@@ -74,6 +74,14 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   .portrait { max-width: 420px; }
   .work { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { background-position: 78% center; }
+  .services .list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .services .list li { display: block; padding: 20px; border: 1px solid rgb(31 35 38 / 16%); border-left: 2px solid var(--accent); border-radius: 2px; background: rgb(255 255 255 / 32%); }
+  .services .list li:last-child { border-bottom: 1px solid rgb(31 35 38 / 16%); }
+  .services .list p { margin-top: 8px; font-size: 16px; line-height: 1.5; }
 }
-@media (max-width: 480px) { nav ul { gap: 16px; } nav ul li:nth-child(n+3) { display: none; } }
+@media (max-width: 480px) {
+  nav ul { display: grid; grid-template-columns: repeat(2, max-content); gap: 0 12px; font-size: 13px; }
+  .services .list { grid-template-columns: 1fr; gap: 10px; }
+  .services .list li { padding: 18px 20px; }
+}
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
