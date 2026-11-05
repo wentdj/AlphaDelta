@@ -28,7 +28,7 @@ nav { height: 96px; display: flex; align-items: center; justify-content: space-b
 nav ul { display: flex; gap: 36px; margin: 0; padding: 0; list-style: none; font-size: 16px; }
 nav ul a { color: var(--muted); text-decoration: none; }
 nav ul a:hover { color: var(--ink); }
-.site-nav:not(.is-scrolled) nav ul a { color: var(--accent); }
+.site-nav:not(.is-scrolled) nav ul a { color: #d8d5ce; text-shadow: 0 1px 3px rgb(0 0 0 / 35%); }
 .site-nav:not(.is-scrolled) nav ul a:hover { color: var(--accent-hover); }
 .hero { --ink: #1f2326; --muted: #555b60; color: var(--ink); min-height: min(80vh, 720px); padding-top: 96px; display: flex; flex-direction: column; overflow: hidden; background: #bdbdb9 url("assets/images/Image1.jpg") 82% center/cover no-repeat; }
 .hero-content { flex: 1; display: grid; grid-template-columns: 7fr 5fr; align-items: end; padding-bottom: 72px; }
